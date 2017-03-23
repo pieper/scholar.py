@@ -14,7 +14,7 @@ Usage Instructions:
 (1)To fetch Bibtex of all the articles citing that article.
 * get the cited number on google scholarof that article, eg  "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=6675397154864859782&as_sdt=5" and the cited number is "6675397154864859782".
 * input the following code in your terminal python scholar.py -c 100 -T 6675397154864859782 --citation "bt" .
-  100 represents the number of article you want to get from google scholar.
+  100 represents the number of article you want to get from google scholar.(if you input 100,it will get 200 results back)
   citation "bt" represents get the bibtex of every article.
 * Then all the "Bibtex" information will be download into a jsaon file.
 
