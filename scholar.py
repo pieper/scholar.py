@@ -1214,14 +1214,17 @@ def csv(querier, header=False, sep='|'):
         result = art.as_csv(header=header, sep=sep)
         print(encode(result))
         header = False
-        
+                
 def store(data,file_name):
-    with open(file_name, 'w') as json_file:
-        json_file.write(json.dumps(data))
+    f1 = open(file_name,'w')
+    f1.write(data)
+    f1.close()
+
         
 def citation_export(querier):
     articles = querier.articles
-    store(querier.list,"bibtex.json")
+    string = ''.join(querier.list)
+    store(string,'Bibtex.txt')        #store(querier.list,'bibtex.json')
     for art in articles:
         print (encode(art.as_citation()) +'\n')
  
