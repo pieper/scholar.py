@@ -27,6 +27,15 @@ API, but I will never add features that intentionally try to work
 around the query limits imposed by Google Scholar. Please don't ask me
 to add such features.
 
+Install
+-------
+
+Requires [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/)
+
+For example:
+
+ pip install beautifulsoup4
+
 Examples
 --------
 
